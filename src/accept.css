@@ -1,0 +1,66 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; 
+    transition: background-color ; 
+  }
+  
+  .dark-mode {
+    background-color: #32314c;
+    color: #fff; 
+  }
+  .light-mode {
+    background-color: #fff;
+    color: #32314c;
+    
+  }
+  
+  .app-container {
+    margin-right: 13%;
+    margin-left: 10%;
+    padding: 2%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    
+  }
+  
+  .Job-content {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+  
+  }
+  
+  
+  .toggle-container{
+  margin-right: 280px;
+  }
+  
+  
+  .ContentAccept{
+  
+    text-align: left;
+    
+  }
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
