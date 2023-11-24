@@ -1,6 +1,5 @@
 import React from 'react';
 import { useState } from 'react';
-import './contentAccept.css';
 import { FaSun, FaMoon } from 'react-icons/fa';
 import ContentFrind from './contentFrind';
 
@@ -39,7 +38,8 @@ function AcceptFrind(){
  
 > 
       <div className="header-container">
-      <h5>Hello  ,Mohannad Alsouqi!</h5>
+      <h5 style={{ fontWeight: 'bold', marginRight: '-50%' }}>Hello</h5>
+  <h5>,Mohannad Alsouqi!</h5>
         <div className="toggle-container" onClick={toggleDarkMode}>
           {isDarkMode ? <FaMoon className="moon-icon" /> : <FaSun className="sun-icon" />}
         </div>

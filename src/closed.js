@@ -1,14 +1,13 @@
 import React from 'react';
 import { useState } from 'react';
+import './greetingPage.css';
 import { FaSun, FaMoon } from 'react-icons/fa';
-import ContentAccept from './contentAccept';
+import Contentclosed from './contentclosed';
 
 
 
 
-
-
-function Accept(){
+function Closed(){
 
  
  const [isDarkMode, setIsDarkMode] = useState(false);
@@ -38,22 +37,24 @@ function Accept(){
  
 > 
       <div className="header-container">
-      <h5 style={{ fontWeight: 'bold', marginRight: '-50%' }}>Hello</h5>
+     
+  <h5 style={{ fontWeight: 'bold', marginRight: '-50%' }}>Hello</h5>
   <h5>,Mohannad Alsouqi!</h5>
+
+
+        
         <div className="toggle-container" onClick={toggleDarkMode}>
           {isDarkMode ? <FaMoon className="moon-icon" /> : <FaSun className="sun-icon" />}
         </div>
-
+       
       </div>
 
       <div className={`Job-content ${isDarkMode ? 'dark-mode' : 'light-mode'} `}>
-       
-  <div className='ContentAccept'>
-        <ContentAccept isDarkMode={isDarkMode} jobStatus={jobStatus} onJobStatusChange={handleJobStatusChange} />
         
-        
+  <div className='Content'>
+        <Contentclosed isDarkMode={isDarkMode} jobStatus={jobStatus} onJobStatusChange={handleJobStatusChange} />
         </div>
-    
+     
         </div>
         </div>
 
@@ -63,4 +64,4 @@ function Accept(){
  }
 
 
-export default Accept;
+export default Closed;
